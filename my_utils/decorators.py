@@ -13,3 +13,10 @@ def my_timer(func):
 
         return result
     return wrapper
+
+def hello_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Hello! How are you?")
+        result = func(*args, **kwargs)
+        return result
+    return wrapper

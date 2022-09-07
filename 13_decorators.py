@@ -1,6 +1,7 @@
 import time, random
-from my_utils.decorators import my_timer
+from my_utils.decorators import my_timer, hello_decorator
 
+@hello_decorator
 @my_timer
 def worker1():
     print("Worker 1 started....")
